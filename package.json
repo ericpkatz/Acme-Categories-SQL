@@ -1,0 +1,26 @@
+{
+  "name": "acme-categories-sql-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "CONN=postgres://localhost/acme_db_test nodemon -e js,html node_modules/mocha/bin/mocha",
+    "start:dev": "CONN=postgres://localhost/acme_db PORT=3000 nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "pg": "^6.0.3",
+    "swift": "^0.1.8"
+  }
+}
